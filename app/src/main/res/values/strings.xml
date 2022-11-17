@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ejemplo Tipos de Layout</string>
+    <string name="linear_layout_activity_title">Ejemplo Linear Layout</string>
+    <string name="constraint_layout_activity_title">Ejemplo Constraint Layout</string>
+    <string name="table_layout_activity_title">Ejemplo Table Layout</string>
+    <string name="absolute_layout_activity_title">Ejemplo Absolute Layout</string>
+    <string name="descripcion">Los elementos de una UI se pueden distribuir de las siguientes maneras:</string>
+
+    <!-- TABLE LAYOUT -->
+    <string name="table_layout_login_title">INICIAR SESIÓN</string>
+    <string name="table_layout_username_label">Usuario</string>
+    <string name="table_layout_username_placeholder">pepe123</string>
+    <string name="table_layout_password_label">Contraseña</string>
+    <string name="table_layout_password_placeholder">*******</string>
+    <string name="table_layout_login_button">Conectar</string>
+</resources>
