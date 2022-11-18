@@ -4,11 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="30dp"
     tools:context=".AbsoluteLayoutActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Absolute layout"/>
+        android:text="Absolute layout, ejemplo formulario cineteca"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_x="110px"
+            android:layout_y="110px"
+            android:text="@string/absolute_layout_movie_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_x="110px"
+            android:layout_y="150px"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_x="110px"
+            android:layout_y="300px"
+            android:text="@string/absolute_layout_director_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_x="110px"
+            android:layout_y="340px"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_x="200px"
+            android:layout_y="500px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/absolute_layout_submit_movie_button"
+            />
+
+        <ImageView
+            android:layout_x="225px"
+            android:layout_y="800px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/black_panther"
+            />
+    </AbsoluteLayout>
 
 </LinearLayout>

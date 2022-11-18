@@ -13,4 +13,9 @@
     <string name="table_layout_password_label">Contraseña</string>
     <string name="table_layout_password_placeholder">*******</string>
     <string name="table_layout_login_button">Conectar</string>
+
+    <!-- ABSOLUTE LAYOUT -->
+    <string name="absolute_layout_movie_title_label">Nombre de la película</string>
+    <string name="absolute_layout_director_name_label">Director</string>
+    <string name="absolute_layout_submit_movie_button">Ingresar al registro</string>
 </resources>
