@@ -16,4 +16,82 @@
         android:textSize="30sp"
         android:textAlignment="center"/>
 
+    <!-- Constraint layout que contendrá elementos ubicados en relación a
+     sus demás elementos hermanos. Todos los elementos deben tener un id
+      para que se puedan mencionar entre sí dentro de este layout. -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/imagePlant"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/plant" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life Garden"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintBottom_toBottomOf="@+id/imagePlant"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintStart_toEndOf="@id/imagePlant"
+            app:layout_constraintTop_toTopOf="@+id/imagePlant" />
+
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Elige la decoración perfecta para tu vida."
+            app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewSubtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Para interiores y jardines."
+            app:layout_constraintStart_toStartOf="@+id/textViewSubtitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle" />
+
+        <TextView
+            android:id="@+id/textViewSubtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="50% de descuento con tus tarjetas"
+            app:layout_constraintStart_toStartOf="@+id/textViewSubtitle2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="61dp"
+            android:text="Quiero una"
+            app:layout_constraintStart_toStartOf="@+id/textViewSubtitle3"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle3" />
+
+        <!-- Línea imaginaria que sirve como referencia para el
+        TextView "What's my plant?" (fija su límite hacia la derecha) -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.85" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>
